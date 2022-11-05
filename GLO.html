@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>GL Online</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    
+    <div>
+           <p class="font-logo"><b>GL</b>-Online </p>
+    </div>
+
+    <div class="login">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label><font face="arial"><b>NIK:</b></font></label>
+				<input type="text" name="nik" id="nik" />
+			</div>
+			<div>
+				<label><font face="arial"><b>Faskes Tujuan:</b></font></label>
+				<input type="text" name="faskes" id="faskes" />
+			</div>
+			<div>
+				<label><font face="arial"><b>WA/E-mail:</b></font></label>
+				<input type="text" name="wamail" id="wamail" />
+			</div>
+			<div>
+				<center><input type="submit" value="AJUKAN" class="tombol"></center>
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var nik = document.getElementById("nik").value;
+		var faskes = document.getElementById("faskes").value;
+            faskes = faskes.toLowerCase();
+		var wamail = document.getElementById("wamail").value;
+
+		if (nik == "1234567891011123" && faskes == "rsud indrasari" && wamail == "081212121212") {
+            window.open ("GLO-OK.html");
+		
+        }else if (nik == "1234567891011124" && faskes == "rsud indrasari" && wamail == "081212121213") {
+            window.open ("GLO-NO.html");
+
+		}else{
+			alert('Anda harus mengisi data dengan lengkap !');
+		}
+	}
+</script>
+    
+</html>

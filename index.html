@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>JR CHECK</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+    
+    <div>
+           <p class="font-logo"><b>JR</b>-Check </p>
+    </div>
+
+    <div class="login">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label><center><font face="arial"><b>Isikan NIK Pasien</b></font></center></label>
+				<center><input type="text" name="nik" id="nik" /></center>
+			</div>
+			
+			<div>
+				<center><input type="submit" value="CEK" class="tombol"></center>
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById("nik").value;
+
+		if (nama == 1234567891011123) {
+            window.open ("OK1.html");
+             return true;
+		}else if (nama == 1234567891011124){
+			window.open ("OK2.html");
+			return true;
+		}else if(nama = ! ""){
+			alert('NIK Pasien Harus Diisi');
+			return true;
+		}else{
+		alert('NIK Tidak Ditemukan');
+		return true;
+		}
+	}
+</script>
+    
+</html>
